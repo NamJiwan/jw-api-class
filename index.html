@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>전통시장 전국현황</title>
+</head>
+
+<body>
+    <header>
+        <div class="w-full flex justify-between items-center h-20 shadow-sm">
+            <div class="flex h-full items-center space-x-8">
+                <!-- 로고 -->
+                <div class="px-4"><img class="h-8" src="./images/logo.png" alt="logo"></div>
+
+                <!-- 메뉴리스트 -->
+                <ul class="flex space-x-8">
+                    <a href="index.html?city=대구광역시">
+                        <li>대구광역시</li>
+                    </a>
+                    <a href="index.html?city=경상북도">
+                        <li>경상북도</li>
+                    </a>
+                    <a href="index.html?city=경상남도">
+                        <li>경상남도</li>
+                    </a>
+                    <a href="index.html?city=부산광역시">
+                        <li>부산광역시</li>
+                    </a>
+                    <a href="index.html?city=경기도">
+                        <li>경기도</li>
+                    </a>
+                    <a href="index.html?city=서울특별시">
+                        <li>서울특별시</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="map" class="w-full h-[calc(100vh-80px)]"></div>
+    </main>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3da40457bfdcc4665f55f88b67175d26&libraries=services"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/apiData.js"></script>
+</body>
+
+</html>
